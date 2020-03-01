@@ -46,4 +46,4 @@ def delete_answerq(answerq_userid):
     answerqs.remove(answerq[0])
     return jsonify({'result': True})
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True, threaded=True)
